@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<title>Keith's Pick Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b3d91">
+</head>
+
+<body>
+<h1>Keith's Pick Calculator</h1>
+<div class="card">
+  <label for="unitsNeeded">Units needed</label>
+  <div class="row"><input id="unitsNeeded" type="number" min="0" inputmode="numeric" placeholder="e.g. 720" /></div>
+
+  <label for="unitsPerBox">Units per box</label>
+  <div class="row" id="boxRow"><input id="unitsPerBox" type="number" min="1" inputmode="numeric" placeholder="e.g. 240" /></div>
+
+  <div id="packRow">
+    <label for="unitsPerPack">Units per pack</label>
+    <div class="row"><input id="unitsPerPack" type="number" min="1" inputmode="numeric" placeholder="e.g. 12" /></div>
+  </div>
+
+  <label class="checkbox">
+    <input type="checkbox" id="onlySingles" /> Box is full of singles
+  </label>
+
+  <button id="calculateBtn">Calculate</button>
+  <button id="resetBtn">Reset</button>
+
+  <div id="errorMsg" class="error" aria-live="polite"></div>
+
+  <div id="resultArea" class="result" style="display:none;">
+    <div class="result-summary" aria-live="polite">
+      <div id="boxesRow"><span class="label">Boxes:</span> <span id="boxesCount" class="boxes-number">0</span></div>
+      <div id="packsRowResult"><span class="label">Packs:</span> <span id="packsCount" class="packs-number">0</span></div>
+      <div id="singlesRow"><span class="label">Singles:</span> <span id="singlesCount" class="singles-number">0</span></div>
+    </div>
+    <div id="mathExplanation" class="math-explanation"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(reg => console.log('Service Worker registered:', reg))
+    .catch(err => console.error('SW registration failed:', err));
+}
+</script>
+</body>
+</html>

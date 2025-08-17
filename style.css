@@ -1,0 +1,43 @@
+:root{
+  --blue-900:#0b3d91;
+  --blue-600:#1976d2;
+  --bg:#e3f2fd;
+  --card:#ffffff;
+}
+html,body{height:100%;margin:0;}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg); color:var(--blue-900); padding:18px; box-sizing:border-box;
+}
+h1{ text-align:center; margin:0 0 14px 0; font-size:1.25rem; font-weight:700; }
+.card{ background:var(--card); border-radius:12px; padding:14px;
+       box-shadow:0 6px 18px rgba(11,61,145,0.12); max-width:460px; margin:0 auto; }
+label{ display:block; font-weight:600; margin-top:10px; font-size:0.95rem; }
+.row{ margin-top:6px; }
+input[type="number"]{
+  width:100%; padding:10px 12px; margin-top:6px; border:2px solid var(--blue-600);
+  border-radius:8px; font-size:1rem; box-sizing:border-box;
+}
+input:disabled{opacity:.55}
+.checkbox{ display:flex; align-items:center; gap:10px; margin-top:10px; font-weight:600; }
+button{
+  width:100%; margin-top:12px; background:var(--blue-900); color:white; border:0;
+  padding:11px; border-radius:10px; font-weight:700; font-size:1rem; cursor:pointer;
+}
+#resetBtn{ background:#1976d2; margin-top:8px; }
+.error{ color:#b00020; text-align:center; margin-top:8px; font-weight:700; }
+.result{ margin-top:16px; padding:12px; border-radius:10px;
+         background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%); }
+.result-summary{
+  display:flex; justify-content:center; gap:28px; align-items:center;
+  font-weight:700; font-size:1.15rem; flex-wrap:nowrap; text-align:center;
+}
+.result-summary > div{ display:flex; align-items:center; }
+.label{ color:var(--blue-900); font-weight:600; margin-right:6px; }
+.boxes-number{ color:#1e88e5; }
+.packs-number{ color:#43a047; }
+.singles-number{ color:#f4511e; }
+.math-explanation{
+  margin-top:8px; background:#bbdefb; padding:6px 10px; border-radius:8px;
+  font-size:0.95rem; line-height:1.2; color:var(--blue-900); white-space:pre-line; text-align:left;
+}
