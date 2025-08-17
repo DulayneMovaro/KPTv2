@@ -1,6 +1,6 @@
 {
   "name": "Keith's Pick Calculator",
-  "short_name": "PickCalc",
+  "short_name": "KPT",
   "id": "/index.html", 
   "start_url": "https://dulaynemovaro.github.io/KPTv2/index.html", // This value should match the id in most cases
   "display": "standalone",
