@@ -2,7 +2,7 @@
   "name": "Keith's Pick Calculator",
   "short_name": "PickCalc",
   "id": "/index.html", 
-  "start_url": "https://dulaynemovaro.github.io/KPTv2//index.html", // This value should match the id in most cases
+  "start_url": "https://dulaynemovaro.github.io/KPTv2/index.html", // This value should match the id in most cases
   "display": "standalone",
   "background_color": "#e3f2fd",
   "theme_color": "#0b3d91",
