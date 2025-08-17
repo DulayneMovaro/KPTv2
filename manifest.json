@@ -1,8 +1,8 @@
 {
   "name": "Keith's Pick Calculator",
   "short_name": "PickCalc",
-  "id": "/?homescreen=1", 
-  "start_url": "/?homescreen=1", // This value should match the id in most cases
+  "id": "/index.html", 
+  "start_url": "/index.html", // This value should match the id in most cases
   "display": "standalone",
   "background_color": "#e3f2fd",
   "theme_color": "#0b3d91",
